@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, #68EACC 0%, #497be8 100%);
+}
+
+.wrapper {
+    margin: 120px auto;
+    max-width: 400px;
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    padding: 25px;
+}
+
+.wrapper header {
+    font-size: 30px;
+    font-weight:  600;
+}
+
+.wrapper .inputField {
+    display: flex;
+    height: 45px;
+    width: 100%;
+    margin: 20px 0;
+}
+
+.inputField input {
+    width: 85%;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding-left: 15px;
+    font-size: 17px;
+    outline: none;
+}
+
+.inputField button {
+    width: 60px;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: #8e489e;
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-left: 5px;
+    color: #fff;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.inputField button.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.wrapper .todoList {
+    max-height: 250px;
+    overflow-y: auto;
+}
+
+.todoList li {
+    list-style: none;
+    height: 45px;
+    line-height: 45px;
+    position: relative;
+    border-radius: 3px;
+    background: #f2f2f2;
+    border-bottom: 8px;
+    padding: 0 15px;
+    cursor: default;
+    overflow: hidden;
+}
+
+.todoList li span {
+    position: absolute;
+    right: -45px;
+    color: #fff;
+    background: #e74c3c;
+    width: 45px;
+    border-radius: 0 3px 3px 0;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.todoList li:hover span {
+    right: 0;
+}
+
+.wrapper .footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 25px;
+    align-items: center;
+}
+
+.footer button {
+    border: none;
+    outline: none;
+    background: #8e489e;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 3px;
+    color: #fff;
+    padding: 6px 10px;
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.footer button.active {
+    opacity: 1;
+    pointer-events: auto;
+}
